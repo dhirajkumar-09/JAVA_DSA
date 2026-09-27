@@ -43,10 +43,30 @@ public class sorting{
     
           // in build sort function 
 
+
+    public static void counting_Sort(int numbers[] ){
+        int largest =Integer.MIN_VALUE;
+        for(int i=0; i<numbers.length; i++){
+            largest=Math.max(largest,numbers[i]);
+        }
+        int count[]=new int[largest+1];
+        for(int i=0; i<numbers.length; i++){     // TO KNOW FREQUENICES OF NUMBER IN GIVEN ARRAY
+            count[numbers[i]]++;
+        }
+        int j=0;
+        for(int i=0; i<count.length; i++){
+            while(count[i]>0){
+                numbers[j]=i;
+                j++;
+                count[i]--;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         int numbers[]={5,3,6,2};
-    //    selection_sort(numbers);
-    insertion_sort(numbers);
+    
+    counting_Sort(numbers);
        for(int i=0; i<numbers.length; i++){
         System.out.print(numbers[i]+" ");
        }
