@@ -1,26 +1,26 @@
 public class array2{
-//     public static int  maxSum(int number[]){
-//         int CurrSum=0;
-//         int maxSum=Integer.MIN_VALUE;
-//         for(int i=0; i<number.length; i++){
-//            int start=i;
-//             for(int j=i; j<number.length; j++){
-//                 int end=j;
-//                 CurrSum=0;
-//                 for(int k=start; k<=end; k++){
-//                     CurrSum += number[k];
-//                 }
-//                 if(maxSum<CurrSum){
-//                     maxSum=CurrSum;                
-//                 }
-//             }
-//         } 
-//         return maxSum;
-//     }
-//     public static void main(String[] args) {
-//         int number[]={4,5,6,7,8,9};
-//         System.out.println(maxSum(number));
-//     }
+    // public static int  maxSum(int number[]){
+    //     int CurrSum=0;
+    //     int maxSum=Integer.MIN_VALUE;
+    //     for(int i=0; i<number.length; i++){
+    //        int start=i;
+    //         for(int j=i; j<number.length; j++){
+    //             int end=j;
+    //             CurrSum=0;
+    //             for(int k=start; k<=end; k++){
+    //                 CurrSum += number[k];
+    //             }
+    //             if(maxSum<CurrSum){
+    //                 maxSum=CurrSum;                
+    //             }
+    //         }
+    //     } 
+    //     return maxSum;
+    // }
+    // public static void main(String[] args) {
+    //     int number[]={4,5,6,7,8,9};
+    //     System.out.println(maxSum(number));
+    // }
 
     // public static int prefix_maxSum(int numbers[]){   // prefix sum method
     //     int CurrSum=0;
