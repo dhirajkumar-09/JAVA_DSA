@@ -57,7 +57,7 @@ public class recurrslec {
 
 
     public static void print_fibonacci(int n) {
-        if (n <= 0) {
+        if (n <= 0) {       //base case
             return;
         }
         int fibonacci[] = new int[n];
@@ -74,6 +74,20 @@ public class recurrslec {
     }
 
 
+    //Check an array sorted or not
+    public static boolean is_sorted(int arr[],int i){ //here i is the index
+        if(i==arr.length-1) return true;
+        if(arr[i]>arr[i+1]) return false;
+        return is_sorted(arr,i+1);     // complexity O(n)
+    }
+
+
+    //find first occurence of an element
+    public static int first_occurence(int arr[],int key,int i){
+        if(i==arr.length) return -1;
+        if(arr[i]==key) return i;
+        return first_occurence(arr,key,i+1);
+    }
     void main(String[] args) {
         int n = 8;
 //        printDEC(n);
@@ -83,5 +97,8 @@ public class recurrslec {
         System.out.println("Sum of n natural numbers is : "+sum_of_natural_numbers(n));
         System.out.println("Nth term of fibonacci number : "+fibonacci_number(25));
         print_fibonacci(6);
+        int[] arr={67,353,34,5243,5,5,6,7,8};
+        System.out.println(is_sorted(arr,2));
+        System.out.println(first_occurence(arr,5,0));
     }
 }
