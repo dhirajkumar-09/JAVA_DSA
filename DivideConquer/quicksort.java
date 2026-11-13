@@ -1,5 +1,4 @@
 package DivideConquer;
-
 public class quicksort {  // by use pivot and partition approach
     public static void quick_sort(int arr[],int low,int high){
         if(low>=high){
