@@ -47,4 +47,6 @@ public class divideandconquer {
         mergesort(arr,0,arr.length-1);
         printarr(arr);
     }
-}
+}  //Timecomplexity O(nlogn)
+//Space O(n)
+
