@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class recurrslec {
 
     public static void printDEC(int n) {
@@ -18,6 +20,7 @@ public class recurrslec {
         printInc(n - 1);
         System.out.print(n+" ");
     }
+
 
 
     public static int fact(int n){
@@ -88,6 +91,27 @@ public class recurrslec {
         if(arr[i]==key) return i;
         return first_occurence(arr,key,i+1);
     }
+
+
+    //find last occurence of an element
+    public static int last_occurence(int arr[],int key,int i){
+        if(i==arr.length) return -1;
+        if(arr[i]==key) return i;
+        return first_occurence(arr,key,i-1);
+    }
+
+
+    //Print value of x*n
+    public static int power_of_n(int x, int n){
+        if(n==0) return 1;
+        return x * power_of_n(x,n-1);       // COmplexity is the O(n)
+    }
+
+
+
+    //Print value of x*n and optimized method for it
+
+
     void main(String[] args) {
         int n = 8;
 //        printDEC(n);
@@ -97,8 +121,10 @@ public class recurrslec {
         System.out.println("Sum of n natural numbers is : "+sum_of_natural_numbers(n));
         System.out.println("Nth term of fibonacci number : "+fibonacci_number(25));
         print_fibonacci(6);
-        int[] arr={67,353,34,5243,5,5,6,7,8};
+        int[] arr={67,353,34,5243,5,5,6,5000,7,7,7,7,7,7,7,7,7,8};
         System.out.println(is_sorted(arr,2));
         System.out.println(first_occurence(arr,5,0));
+        System.out.println(last_occurence(arr,7,arr.length-1));
+        System.out.print("Power of n for any number "+power_of_n(2,10));
     }
 }
