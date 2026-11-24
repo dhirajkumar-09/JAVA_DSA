@@ -25,6 +25,8 @@ public class quicksort {  // by use pivot and partition approach
         arr[i]=temp;
         return i;
     }
+
+
     public static void printarr(int arr[]){
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
