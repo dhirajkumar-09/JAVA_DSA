@@ -11,11 +11,11 @@ public class StringDemo{
     public static boolean checkpalindrome(String fullname){    // time complexity O(n)
         int n=fullname.length();
         for(int i=0; i<n/2;i++){
-            if (fullname.charAt(i)==fullname.charAt(n-i-1)){
-                return true;
+            if (fullname.charAt(i)!=fullname.charAt(n-i-1)){  // Bug fixed: was == (should return false on MISMATCH)
+                return false;
             }
         }
-        return false;
+        return true;  // Bug fixed: return true only after full loop passes
     }
 
     
