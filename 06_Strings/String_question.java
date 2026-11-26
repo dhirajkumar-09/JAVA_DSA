@@ -24,7 +24,7 @@ public class String_question {
             i++; j--;
         }
         String str= new String(c);
-        return str==s;
+        return str.equals(s);  // Bug fixed: was str==s (compares references, not content)
 
     }
 

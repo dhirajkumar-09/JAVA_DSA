@@ -95,9 +95,9 @@ public class recurrslec {
 
     //find last occurence of an element
     public static int last_occurence(int arr[],int key,int i){
-        if(i==arr.length) return -1;
+        if(i<0) return -1;  // Bug fixed: was i==arr.length (wrong for backward search)
         if(arr[i]==key) return i;
-        return first_occurence(arr,key,i-1);
+        return last_occurence(arr,key,i-1);  // Bug fixed: was calling first_occurence
     }
 
 
