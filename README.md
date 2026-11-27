@@ -1,14 +1,14 @@
 # Java DSA Learning Repository
 
-A clean, topic-wise collection of Java programs, practice problems, and concise revision PDFs covering my Data Structures & Algorithms (DSA) learning journey in Java — organized sequentially from **Java Basics** up to **ArrayList**.
+A clean, topic-wise collection of Java programs, practice problems, and concise revision PDFs covering my Data Structures & Algorithms (DSA) learning journey in Java — organized sequentially from **Java Basics** up to **LinkedList**.
 
 ---
 
 ## Learning Progress
 
-- **Current Milestone:** Completed up to **ArrayList** (11 topics studied)
-- **Original Java Programs:** 18 `.java` files organized across 11 topic folders
-- **Revision Notes:** 11 topic-wise revision PDFs + 2 original reference PDFs
+- **Current Milestone:** Completed up to **LinkedList** (12 topics studied)
+- **Original Java Programs:** 19 `.java` files organized across 12 topic folders
+- **Revision Notes:** 12 topic-wise revision PDFs + 2 original reference PDFs
 
 | # | Topic | Status | Programs |
 | :-: | :--- | :---: | :---: |
@@ -22,7 +22,8 @@ A clean, topic-wise collection of Java programs, practice problems, and concise 
 | 08 | [Recursion](./08_Recursion/) | Completed | 1 |
 | 09 | [Divide & Conquer](./DivideConquer/) | Completed | 2 |
 | 10 | [Backtracking](./Backtracking/) | Completed | 1 |
-| 11 | [ArrayList](./ArrayList/) | Completed (Current) | 1 |
+| 11 | [ArrayList](./ArrayList/) | Completed | 1 |
+| 12 | [LinkList](./LinkList/) | Completed (Current) | 1 |
 
 ---
 
@@ -41,6 +42,7 @@ A clean, topic-wise collection of Java programs, practice problems, and concise 
 | 09 | [DivideConquer](./DivideConquer/) | [DivideConquer_Revision.pdf](./DivideConquer/DivideConquer_Revision.pdf) | [`divideandconquer.java`](./DivideConquer/divideandconquer.java), [`quicksort.java`](./DivideConquer/quicksort.java) |
 | 10 | [Backtracking](./Backtracking/) | [Backtracking_Revision.pdf](./Backtracking/Backtracking_Revision.pdf) | [`backtracking.java`](./Backtracking/backtracking.java) |
 | 11 | [ArrayList](./ArrayList/) | [ArrayList_Revision.pdf](./ArrayList/ArrayList_Revision.pdf) | [`Array_list.java`](./ArrayList/Array_list.java) |
+| 12 | [LinkList](./LinkList/) | [LinkList_Revision.pdf](./LinkList/LinkList_Revision.pdf) | [`link_list.java`](./LinkList/link_list.java) |
 
 ---
 
@@ -110,6 +112,11 @@ A clean, topic-wise collection of Java programs, practice problems, and concise 
 - **Java Programs:**
   - [`Array_list.java`](./ArrayList/Array_list.java) — `ArrayList` operations, `swap`, `Collections.sort`, multi-dimensional `ArrayList`, Container With Most Water (brute force & 2-pointer), Pair Sum 1 (brute force & 2-pointer), and Pair Sum 2 (rotated sorted 2-pointer).
 
+### 12. [LinkList](./LinkList/)
+- **Revision PDF:** [LinkList_Revision.pdf](./LinkList/LinkList_Revision.pdf)
+- **Java Programs:**
+  - [`link_list.java`](./LinkList/link_list.java) — Singly LinkedList implementation: Node definition, `addFirst`, `addLast`, `addMiddle`, `print`, `removefirst`, `removeLast`, `iterationSearch`, `recurssiveSearch`, in-place 3-pointer `reverse`, `delete_Nth_Node_from_end`, `findMiddle` (slow-fast pointers), and `checkPalindrome`.
+
 ---
 
 ## How to Run a Java File
@@ -119,8 +126,8 @@ A clean, topic-wise collection of Java programs, practice problems, and concise 
   javac 04_Arrays/array2.java
   java -cp 04_Arrays array2
   ```
-- **Packaged files** (`DivideConquer`, `Backtracking`, `ArrayList`) — compile and run from the repository root:
+- **Packaged files** (`DivideConquer`, `Backtracking`, `ArrayList`, `LinkList`) — compile and run from the repository root:
   ```bash
-  javac ArrayList/Array_list.java
-  java ArrayList.Array_list
+  javac LinkList/link_list.java
+  java LinkList.link_list
   ```
